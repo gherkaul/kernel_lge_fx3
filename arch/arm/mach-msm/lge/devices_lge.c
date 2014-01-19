@@ -179,7 +179,9 @@ bool lge_get_board_usembhc(void)
 	return true;
 }
 
-
+#if defined(CONFIG_MACH_MSM8960_L1m)
+	return false; //FSA8008
+#endif
 
 /*           
                             
